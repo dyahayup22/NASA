@@ -25,7 +25,7 @@ export function NasaMeatballLogo({
         </radialGradient>
       </defs>
 
-      {/* Blue Sphere */}
+      {/* Blue Sphere*/}
       <circle
         cx="60"
         cy="60"
