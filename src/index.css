@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Exo 2", "Plus Jakarta Sans", sans-serif;
-  --font-sans: "Plus Jakarta Sans", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Fira Sans Black", "Fira Sans", sans-serif;
+  --font-sans: "Overpass", sans-serif;
+  --font-mono: "Overpass", sans-serif;
 }
 
 @layer base {
