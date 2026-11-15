@@ -239,32 +239,34 @@ export const ExploreScreen: React.FC<ExploreScreenProps> = ({
                 </div>
               )}
 
-              <div className="flex items-center gap-2 text-xs">
-                <button
-                  type="button"
-                  onClick={() => setShowEcliptic((v) => !v)}
-                  className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border whitespace-nowrap shrink-0 cursor-pointer ${
-                    showEcliptic
-                      ? 'border-blue-400/50 bg-blue-500/20 text-sky-200'
-                      : 'border-slate-700 text-slate-400'
-                  }`}
-                >
-                  <Layers className="w-3.5 h-3.5" />
-                  <span>Ecliptic</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={() => setShowGalacticPlane((v) => !v)}
-                  className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border whitespace-nowrap shrink-0 cursor-pointer ${
-                    showGalacticPlane
-                      ? 'border-blue-400/50 bg-blue-500/20 text-sky-200'
-                      : 'border-slate-700 text-slate-400'
-                  }`}
-                >
-                  <Eye className="w-3.5 h-3.5" />
-                  <span>Galactic Plane</span>
-                </button>
-              </div>
+              {mode === ExploreMode.SkySurvey && (
+                <div className="flex items-center gap-2 text-xs">
+                  <button
+                    type="button"
+                    onClick={() => setShowEcliptic((v) => !v)}
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border whitespace-nowrap shrink-0 cursor-pointer ${
+                      showEcliptic
+                        ? 'border-blue-400/50 bg-blue-500/20 text-sky-200'
+                        : 'border-slate-700 text-slate-400'
+                    }`}
+                  >
+                    <Layers className="w-3.5 h-3.5" />
+                    <span>Ecliptic</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setShowGalacticPlane((v) => !v)}
+                    className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded border whitespace-nowrap shrink-0 cursor-pointer ${
+                      showGalacticPlane
+                        ? 'border-blue-400/50 bg-blue-500/20 text-sky-200'
+                        : 'border-slate-700 text-slate-400'
+                    }`}
+                  >
+                    <Eye className="w-3.5 h-3.5" />
+                    <span>Galactic Plane</span>
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* Interactive SVG Viewport */}
