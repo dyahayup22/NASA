@@ -223,7 +223,7 @@ export const AboutScreen: React.FC<AboutScreenProps> = ({
         </div>
 
         {/* Selected Subsystem Detail + Four Core Pillars */}
-        <div className="lg:col-span-7 flex flex-col justify-between gap-5">
+        <div className="lg:col-span-7 flex flex-col gap-5">
           <div className="rounded-xl border border-blue-400/30 bg-[#071129]/90 p-6">
             <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono text-sky-300">
               <span>SUBSYSTEM {activeSubsystem.code}</span>
